@@ -1,0 +1,11 @@
+version: '2.2'
+
+services:
+  postgress:
+    image: postgres:15.2
+    environment:
+      - POSTGRES_USER=bp
+      - POSTGRES_DB=bp
+      - POSTGRES_PASSWORD=bp
+    ports:
+      - "5442:5432"
